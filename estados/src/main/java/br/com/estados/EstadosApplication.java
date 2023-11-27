@@ -10,4 +10,5 @@ public class EstadosApplication {
 		SpringApplication.run(EstadosApplication.class, args);
 	}
 
+
 }

@@ -21,7 +21,7 @@ public class CidadeModel {
     @Column(name = "name", nullable = false, length = 50)
     private String name;
 
-    // @ManyToOne
-    // @JoinColumn(name="id_estado")
-    // private EstadoModel estado;
+    @ManyToOne
+    @JoinColumn(name="id_estado")
+    private EstadoModel estado;
 }

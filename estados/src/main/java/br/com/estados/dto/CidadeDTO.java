@@ -15,8 +15,11 @@ import org.springframework.hateoas.RepresentationModel;
 public class CidadeDTO extends RepresentationModel {
 
     private int id;
-
     @NotBlank
     @Size(min = 1, max = 50)
     private String name;
+
+    @ManyToOne
+    @JoinColumn(name="id_estado")
+    private EstadoModel estado;
 }

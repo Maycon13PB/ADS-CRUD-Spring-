@@ -4,8 +4,7 @@ create table if not exists estados(
     name varchar(50) not null,
 
     sigla varchar(50) not null,
-
-    constraint pk_estados primary key (id)
+    constraint id_estados primary key (id)
 
 );
 
